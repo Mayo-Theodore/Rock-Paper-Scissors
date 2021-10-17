@@ -1,0 +1,67 @@
+
+<script>
+let playerSelection = ""
+let computerSelection = ""
+let playerScore = 0;
+let computerScore = 0;
+
+function computerPlay(){ 
+  let choice = ["rock", "paper", "scissors"];
+  return choice[Math.floor(Math.random() * 3)]
+}
+
+function playRound(playerSelection, computerSelection){
+    let attempts = 5;
+   playerSelection = prompt("Please enter: Rock, Paper or Scissors").toLowerCase();
+    computerSelection = computerPlay();
+    if(playerSelection == "rock" && computerSelection == "rock"){
+        playerScore += 0.5;
+        computerScore += 0.5;
+        console.log("It's a Tie! You both chose Rock")
+        console.log(playerScore)
+        console.log(computerScore)
+        attempts--;
+    } else if(playerSelection == "rock" && computerSelection == "paper"){
+        computerScore ++;
+        console.log("You Lose! Paper beats Rock")
+        console.log(playerScore)
+        console.log(computerScore)
+        attempts--;
+    } else if(playerSelection == "rock" && computerSelection == "scissors"){
+        playerScore ++;
+        console.log("You Win! Rock beats Scissors")
+        console.log(playerScore)
+        console.log(computerScore)
+        attempts--;
+    }
+    if(playerSelection == "paper" && computerSelection == "paper"){
+        playerScore += 0.5;
+        computerScore += 0.5;
+            console.log("It's a Tie! You both chose Paper!")
+      } else if(playerSelection == "paper" && computerSelection == "rock"){
+            playerScore ++;
+            console.log("You Win! Paper beats Rock")
+      } else if(playerSelection == "paper" && computerSelection == "scissors"){
+            console.log("You Lose! Scissors beats Paper!")
+      }
+
+      if(playerSelection == "scissors" && computerSelection == "scissors"){
+            console.log("It's a Tie! You both chose Scissors!")
+      } else if(playerSelection == "scissors" && computerSelection == "rock"){  
+            console.log("You Lose! Rock beats Scissors")
+      } else if(playerSelection == "scissors" && computerSelection == "paper"){
+            console.log("You Win! Scissors beats Paper!")
+      }
+    }
+
+function game(){
+    let attempts = 3;
+    while(attempts != 0){
+        return playRound(playerSelection, computerSelection)
+        attempts --;
+        if(attempts == 0){
+            console.log("Game Over")
+        }
+    }
+}
+</script>
