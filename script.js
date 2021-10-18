@@ -39,13 +39,11 @@ let playRound = function (playerSelection, computerSelection){
             document.getElementById("player-score").innerHTML = playerScore;
             document.getElementById("computer-score").innerHTML = computerScore;
             document.getElementById("results").innerHTML = "You Lose! PAPER Beats ROCK";
-            document.querySelector("results-message").style.backgroundColor = blue;
     } else if(playerSelection == "rock" && computerSelection == "scissors"){
             playerScore ++;
             document.getElementById("player-score").innerHTML = playerScore;
             document.getElementById("computer-score").innerHTML = computerScore;
             document.getElementById("results").innerHTML = "You Win! ROCK Beats SCISSORS";
-            document.querySelector("results-message").style.backgroundColor = red;
     }
     if(playerSelection == "paper" && computerSelection == "paper"){
             document.getElementById("player-score").innerHTML = playerScore;
@@ -82,7 +80,7 @@ let playRound = function (playerSelection, computerSelection){
             document.getElementById("player-score").innerHTML = playerScore;
             document.getElementById("computer-score").innerHTML = computerScore;
             document.getElementById("results").innerHTML = "WINNER!";
-            playerScore = 0;
+            playerScore = 0;    
             computerScore = 0;
       } else if((playerScore == 5 || computerScore == 5) && (playerScore < computerScore)){
             document.getElementById("player-score").innerHTML = playerScore;

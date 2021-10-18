@@ -14,7 +14,7 @@ header {
 }
 
 body {
- background: url(rps-background.png);
+ background: url(rps-images/rps-background.png);
 }
 .scores{
 border: 5px solid white;
