@@ -6,7 +6,7 @@
 - This project was created using HTML, CSS and Javascript
 
 ## How to Play the Game
-- If you would like to play the game, please visit the following link: http://127.0.0.1:5500/rps.html
+- If you would like to play the game, then please visit the following link: http://127.0.0.1:5500/rps.html
 
 
 
