@@ -8,6 +8,6 @@
 ## How to Play the Game
 - If you would like to play the game, then please visit the following link: http://127.0.0.1:5500/rps.html
 
-
+![Rock Paper Scissors](/rps-images/game.png)
 
 
